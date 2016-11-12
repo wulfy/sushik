@@ -108,41 +108,51 @@ transform:rotate(360deg);
   }
 
   .list{
-    width: 60%;
+    width: 90%;
     margin:0 auto;
 
   }
 
+  .list_title{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 5%;
+  }
+
+
   .list ul{
     padding: 0px;
+    text-align: center;
   }
 
   .list li:nth-child(even){
-    margin-left: 10%;
+    
   }
 
   .list li{
-    height: 180px;
+    width: 20%;
+    min-width: 250px;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 5%;
   }
 
   .list li .image{
-    height: 60%;
-    
-    width: 40%;
     vertical-align: top;
     float: left;
     z-index: -1;
   }
 
   .list li img{
-    height: 100%;
+    width: 100%;
     float: right;
   }
   .list li .text{
-    margin-top: 20px;
-    margin-left: -5%;
-    height: 50%;
-    width: 50%;
+    margin-top: -1em;
+    margin-left: 2%;
+    
     vertical-align: bottom;
     float: left;
     color: grey;
@@ -150,7 +160,6 @@ transform:rotate(360deg);
   }
 
   .text p{
-    padding-left: 15%;
     margin: 0;
     margin-top: 1em;
 
@@ -158,9 +167,10 @@ transform:rotate(360deg);
 
   .text .title{
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.7em;
     color: white;
      text-shadow: 2px 2px 4px #000;
+     display: block;
   }
 
   .text .price{
@@ -171,7 +181,25 @@ transform:rotate(360deg);
     padding-left: 5%;
   }
   .content{
-    margin-top: 20%;
+    margin-top: 15%;
+  }
+
+  .border_left{
+    width: 40%;
+    float: right;
+    margin-right: 40%;
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+  }
+  .border_right{
+    width: 40%;
+    margin-left: 40%;
+    float: left;
+    border-bottom: 1px solid grey;
+  }
+
+  .list_title span{
+    display: block;
   }
 
 	</style>
@@ -188,9 +216,34 @@ transform:rotate(360deg);
 <div class="content">
 
 <div class="list">
-
+<div class="list_title"><span>Sushis</span> <div class="border_left"></div><div class="border_right"></div></div>
 	<ul>
 	<li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+  <li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+  <li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+  <li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+
+  <li >
       <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
         <div class="text blocs">
           <span class="title">LUNCH BOX D</span>
