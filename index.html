@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; À lire</title>
+	<style>
+
+	body{
+		margin:0;
+    	padding: 0;
+    	font-size: 4vh;
+	}
+	.content_accueil{
+		width: 100vw;
+		height: 100vh;
+		background-image: url("../images/sushik.jpg");
+    	background-color: #000;   	
+    	display: block;
+    	background-size: contain;
+    	background-attachment:fixed;
+    	background-repeat:no-repeat;
+    	box-sizing:border-box;
+    	background-position: center;
+    	
+	}
+
+	.logo_container{
+		max-width: 50%;
+		height: 100%;
+		
+	}
+	.logo{
+		position: absolute;
+		width: 30%;
+		height: 90%;
+		z-index: -1;
+		margin-left: 17%;
+		-webkit-transition: 3s linear;
+		-moz-transition: 3s linear;
+		-o-transition: 3s linear;
+		-ms-transition: 3s linear;
+		transition: 3s linear;
+	}
+	.logo_title{
+		width: 69%;
+		float: right;
+    	background-color: transparent;
+    	margin-left: 10%;
+    	display: block;
+    	background-size: contain;
+    	background-attachment:fixed;
+    	background-repeat:no-repeat;
+    	box-sizing:border-box;
+    	background-position: 50% 1px;
+    	height: 100%;
+    	z-index: 2;
+	}
+
+	.logo_title img, .logo img{
+		max-height: 100%;
+		max-width: 100%;
+	}
+	header{
+		height: 15%;
+		width: 100vw;
+		position: fixed;
+		background-color: transparent;
+		padding-top: 5px;
+	}
+
+	nav{
+		width: 100vw;
+		height: 20vh;
+		position: absolute;
+		bottom: 20%;
+	}
+	nav ul{
+		margin: 0 auto;
+		text-align: center;
+		padding: 0;
+	}
+
+	nav ul li{
+		border-radius: 25px;
+    	padding: 0.2em; 
+    	color: white;
+    	margin: 0 auto;
+    	margin-bottom: 0.5em;
+    	list-style-type: none; 
+	}
+
+	nav ul li a{
+		text-decoration: none;
+		color: inherit;
+		
+	}
+
+	nav ul li:hover{
+		/*list-style-image: url('../images/sushi_k_logo.png');*/
+	}
+
+	nav ul li a:hover{
+		
+	}
+
+	/* Radial Out */
+	.hvr-radial-out {
+	  display: inline-block;
+	  vertical-align: middle;
+	  -webkit-transform: perspective(1px) translateZ(0);
+	  transform: perspective(1px) translateZ(0);
+	  box-shadow: 0 0 1px transparent;
+	  -webkit-transition-property: color;
+	  transition-property: color;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	}
+
+	.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #CC2538;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: white;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #CC2538;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  color: white;
+}
+.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.animate{
+	
+translation 20s infinite ease-in-out; 
+-webkit-animation: translation 20s infinite ease-in-out; 
+-moz-animation: translation 20s infinite ease-in-out; 
+-ms-animation: translation 20s infinite ease-in-out; 
+-o-animation: translation 20s infinite ease-in-out;
+}
+
+
+@-webkit-keyframes translation {
+    0%   {margin-left: 40%}
+    5% {margin-left: 2%}
+    100% {margin-left: 2%}
+}
+
+@keyframes translation {
+    0%   {margin-left: 40%}
+    5% {margin-left: 2%}
+    100% {margin-left: 2%}
+}
+
+
+.logo:hover{
+margin-left: 400px;
+
+
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+transform:rotate(360deg);
+
+
+ }
+
+ @media only screen and (max-width: 600px) , screen and (max-device-width: 600px){
+  .content_accueil{
+    background-position: 30% 40%;
+  }
+
+  header{
+  	height: 10%;
+  }
+
+  .logo_container{
+  	margin: 0 auto;
+  }
+
+  .logo{
+		position: absolute;
+		height: 60%;
+	}
+
+
+
+	</style>
+
+</head>
+<body>
+<header>
+	<div class="logo_container">
+		<div class="logo_title"><img src="../images/sushi_k_title_t.png"/></div>
+		<div class="logo animate"><img src="../images/sushi_k_logo.png"/></div>
+	</div>
+</header>
+<div class="content_accueil">
+
+<nav>
+
+	<ul>
+    <li ><a class="hvr-radial-out" href="index.html">Accueil</a></li>
+    <li ><a class="hvr-radial-out" href="contact.html">Menus</a></li>
+    <li ><a class="hvr-radial-out" href="contact.html">Commander</a></li>
+    <li ><a  class="hvr-radial-out" href="contact.html">Contacts</a></li>
+  </ul>
+</nav>
+
+</div>
+
+</body>
+</html>
