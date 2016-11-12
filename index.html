@@ -26,16 +26,17 @@
 	}
 
 	.logo_container{
-		max-width: 50%;
+		/*max-width: 50%;*/
 		height: 100%;
 		
 	}
 	.logo{
-		position: absolute;
-		width: 30%;
+		
+		float:left;
+		/*width: 30%;*/
 		height: 90%;
 		z-index: -1;
-		margin-left: 17%;
+		margin-right: 30%;
 		-webkit-transition: 3s linear;
 		-moz-transition: 3s linear;
 		-o-transition: 3s linear;
@@ -43,10 +44,9 @@
 		transition: 3s linear;
 	}
 	.logo_title{
-		width: 69%;
-		float: right;
+		/*width: 69%;*/
+		float: left;
     	background-color: transparent;
-    	margin-left: 10%;
     	display: block;
     	background-size: contain;
     	background-attachment:fixed;
@@ -62,7 +62,7 @@
 		max-width: 100%;
 	}
 	header{
-		height: 15%;
+		height: 12%;
 		width: 100vw;
 		position: fixed;
 		background-color: transparent;
@@ -198,15 +198,15 @@ translation 20s infinite ease-in-out;
 
 
 @-webkit-keyframes translation {
-    0%   {margin-left: 40%}
-    5% {margin-left: 2%}
-    100% {margin-left: 2%}
+    0%   {margin-right: 5%}
+    5% {margin-right: 10%}
+    100% {margin-right: 10%}
 }
 
 @keyframes translation {
-    0%   {margin-left: 40%}
-    5% {margin-left: 2%}
-    100% {margin-left: 2%}
+    0%   {margin-right: 5%}
+    5% {margin-right: 10%}
+    100% {margin-right: 10%}
 }
 
 
@@ -249,8 +249,9 @@ transform:rotate(360deg);
 <body>
 <header>
 	<div class="logo_container">
+	<div class="logo animate"><img src="../images/sushi_k_logo.png"/></div>
 		<div class="logo_title"><img src="../images/sushi_k_title_t.png"/></div>
-		<div class="logo animate"><img src="../images/sushi_k_logo.png"/></div>
+		
 	</div>
 </header>
 <div class="content_accueil">
