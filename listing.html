@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; À lire</title>
+	<style>
+
+	body{
+		margin:0;
+    	padding: 0;
+    	font-size: 2vh;
+      background-color: black;
+	}
+	
+
+	.logo_container{
+		/*max-width: 50%;*/
+		height: 100%;
+		
+	}
+	.logo{
+		
+		float:left;
+		/*width: 30%;*/
+		height: 90%;
+		z-index: -1;
+		-webkit-transition: 3s linear;
+		-moz-transition: 3s linear;
+		-o-transition: 3s linear;
+		-ms-transition: 3s linear;
+		transition: 3s linear;
+	}
+	.logo_title{
+		/*width: 69%;*/
+		float: left;
+    	background-color: transparent;
+    	display: block;
+    	background-size: contain;
+    	background-attachment:fixed;
+    	background-repeat:no-repeat;
+    	box-sizing:border-box;
+    	background-position: 50% 1px;
+    	height: 100%;
+    	z-index: 2;
+	}
+
+	.logo_title img, .logo img{
+		max-height: 100%;
+		max-width: 100%;
+	}
+	header{
+		height: 12%;
+		width: 100vw;
+		position: fixed;
+		background-color: transparent;
+		padding-top: 5px;
+	}
+
+	
+
+.animate{
+	
+translation 20s infinite ease-in-out; 
+-webkit-animation: translation 20s infinite ease-in-out; 
+-moz-animation: translation 20s infinite ease-in-out; 
+-ms-animation: translation 20s infinite ease-in-out; 
+-o-animation: translation 20s infinite ease-in-out;
+}
+
+
+@-webkit-keyframes translation {
+    0%   {margin-right: -5%}
+    5% {margin-right: 10%}
+    100% {margin-right: 10%}
+}
+
+@keyframes translation {
+    0%   {margin-right: -5%}
+    5% {margin-right: 2%}
+    100% {margin-right: 2%}
+}
+
+
+.logo:hover{
+margin-left: 400px;
+
+
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+transform:rotate(360deg);
+
+
+ }
+
+
+
+  header{
+  	height: 10%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .logo_container{
+  	margin: 0 auto;
+  }
+
+  .list{
+    width: 60%;
+    margin:0 auto;
+
+  }
+
+  .list ul{
+    padding: 0px;
+  }
+
+  .list li:nth-child(even){
+    margin-left: 10%;
+  }
+
+  .list li{
+    height: 180px;
+  }
+
+  .list li .image{
+    height: 60%;
+    
+    width: 40%;
+    vertical-align: top;
+    float: left;
+    z-index: -1;
+  }
+
+  .list li img{
+    height: 100%;
+    float: right;
+  }
+  .list li .text{
+    margin-top: 20px;
+    margin-left: -5%;
+    height: 50%;
+    width: 50%;
+    vertical-align: bottom;
+    float: left;
+    color: grey;
+   /*background-color: rgba(0, 0, 0, 0.7);*/
+  }
+
+  .text p{
+    padding-left: 15%;
+    margin: 0;
+    margin-top: 1em;
+
+  }
+
+  .text .title{
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+     text-shadow: 2px 2px 4px #000;
+  }
+
+  .text .price{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    color: white;
+    padding-left: 5%;
+  }
+  .content{
+    margin-top: 20%;
+  }
+
+	</style>
+
+</head>
+<body>
+<header>
+	<div class="logo_container">
+	<div class="logo animate"><img src="../images/sushi_k_logo.png"/></div>
+		<div class="logo_title"><img src="../images/sushi_k_title_t.png"/></div>
+		
+	</div>
+</header>
+<div class="content">
+
+<div class="list">
+
+	<ul>
+	<li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+  <li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+  <li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+  <li >
+      <div class="image blocs"><img src="../images/sushi1.jpg"/></div>
+        <div class="text blocs">
+          <span class="title">LUNCH BOX D</span>
+          <span class="price">15€</span>
+          <p>3 Sushi Saumon, 3 Maki Saumon, 3 Spring Saumon Avocat, 6 California Saumon Avocat Edamame, Salade de Choux</p></div></li>
+
+  </ul>
+</div>
+
+</div>
+
+</body>
+</html>
