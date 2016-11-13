@@ -34,7 +34,7 @@ body{
     
     float:left;
     height: 90%;
-    max-width: 10%;
+    max-width: 20%;
     z-index: -1;
     -webkit-transition: 3s linear;
     -moz-transition: 3s linear;
