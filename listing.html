@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>WordPress &#8250; À lire</title>
-
+  <link rel="stylesheet" href="burger.css">
+   <link rel="stylesheet" href="snow.css">
    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	<style>
 
@@ -243,18 +244,19 @@ transform:rotate(360deg);
     text-shadow: 2px 2px 5px #000;
   }
   #menu .image{
-    background-color: red;
+    border-bottom: 1px solid red;
     width: 40%;
     float :right;
     margin-top: 0em;
     margin-left: -5em;
+     height: 100%;
 
+         background-size: contain;
+      background-repeat:no-repeat;
+      box-sizing:border-box;
+      background-position: 50% 1px; 
   }
 
-  #menu .image img{
-    width: 100%;
-
-  }
 
   .burger_menu{
     float: right;
@@ -265,17 +267,77 @@ transform:rotate(360deg);
   a{
     color: white;
   }
+
+  #image1{
+    background: url("./images/restaurant.jpg") ;
+  }
+
+  #image2{
+    background: url("./images/chirashi.jpg") ;
+  }
+
+  #image3{
+    background: url("./images/commander.jpg") ;
+  }
+
+  #image4{
+    background: url("./images/contact.jpg") ;
+  }
+
+
+  @media only screen and (max-width: 700px) , screen and (max-device-width: 700px){
+  #menu .image{
+     height: 100%;
+     width: 20%;
+     float: none;
+     margin:5px auto;
+     border:none;
+  }
+
+  #image1{
+    background: url("./images/resto.png") ;
+  }
+
+  #image2{
+    background: url("./images/carte_icon_2.png") ;
+  }
+
+  #image3{
+    background: url("./images/deliver.png") ;
+  }
+
+  #image4{
+    background: url("./images/contact.png") ;
+  }
+
+  #menu span{
+    float: none;
+  }
+
+  #menu li{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+  }
+
+}
 	</style>
 
   <script>
 
   var menuDisplayed = false;
+
+  function toggleBurgerIcon(){
+    document.getElementById("nav-icon1").classList.toggle('open');
+  }
+
   function toggleMenu(){
     if(menuDisplayed)
       document.getElementById("menu").style.display = "none";
     else
       document.getElementById("menu").style.display = "block";
 
+    toggleBurgerIcon();
     menuDisplayed = !menuDisplayed;
   }
   </script>
@@ -283,8 +345,14 @@ transform:rotate(360deg);
 </head>
 <body>
 <header>
-  <div class="burger_menu"><a href="javascript:toggleMenu();"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
-	<div class="logo_container">
+  <div class="burger_menu"><a href="javascript:toggleMenu();">
+    <div id="nav-icon1">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </a></div>
+	<div id="snow" class="logo_container">
 
 	<a href="index.html"><div class="logo animate"><img src="./images/sushi_k_logo.png"/></div>
 		<div class="logo_title"><img src="./images/sushi_k_title_t.png"/></div>
@@ -294,10 +362,10 @@ transform:rotate(360deg);
 </header>
 <nav id="menu" class="menu">
   <ul>
-  <li ><a class="hvr-radial-out" href="#"><div class="image"><img src="./images/restaurant.jpg"></div><span>Le restaurant</span></a></li>
-    <li ><a class="hvr-radial-out" href="listing.html"><div class="image"><img src="./images/chirashi.jpg"></div><span>La carte </span></a></li>
-    <li ><a class="hvr-radial-out" href="#"><div class="image"><img src="./images/commander.jpg"></div><span>Commander </span></a></li>
-    <li ><a  class="hvr-radial-out" href="#"><div class="image"><img src="./images/contact.jpg"></div><span>Contacts </span></a></li>
+  <li ><a class="hvr-radial-out" href="#"><div id="image1" class="image"></div><span>Le restaurant</span></a></li>
+    <li ><a class="hvr-radial-out" href="listing.html"><div id="image2" class="image"></div><span>La carte </span></a></li>
+    <li ><a class="hvr-radial-out" href="#"><div id="image3" class="image"></div><span>Commander </span></a></li>
+    <li ><a  class="hvr-radial-out" href="#"><div id="image4" class="image"></div><span>Contacts </span></a></li>
   </ul>
 </nav>
 
