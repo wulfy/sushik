@@ -228,7 +228,13 @@ transform:rotate(360deg);
 }
 
 @media only screen and (max-width: 550px){
-body{
+      body{
         font-size: 1.8vh;
       }
+
+      #menu li{
+          text-align: center;
+          width: 40%;
+          height: 50px;
+        }
   }
