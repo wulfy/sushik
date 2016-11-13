@@ -128,7 +128,7 @@ transform:rotate(360deg);
     margin-bottom: 10%;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    height: 100px;
+    height: 10em;
   }
 
   #menu li:hover {
@@ -227,7 +227,7 @@ transform:rotate(360deg);
 
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
 body{
         font-size: 1.8vh;
       }
