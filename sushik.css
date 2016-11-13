@@ -34,6 +34,7 @@ body{
     
     float:left;
     height: 90%;
+    max-width: 30%;
     z-index: -1;
     -webkit-transition: 3s linear;
     -moz-transition: 3s linear;
@@ -50,6 +51,7 @@ body{
       z-index: 2;
       background-color: red;
       width: auto;
+      max-width: 30%;
   }
 
   .logo_title img, .logo img{
