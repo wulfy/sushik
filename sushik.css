@@ -183,6 +183,9 @@ transform:rotate(360deg);
 /***** FOR MOBILE DEVICES ****/
   @media only screen and (max-width: 700px) , screen and (max-device-width: 700px){
 
+        .logo_container{
+          padding-top: 2px;
+        }
 
         #menu .image{
            height: 100%;
