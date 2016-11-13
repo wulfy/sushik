@@ -7,7 +7,7 @@
 
   .content_accueil{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url("./images/sushik.jpg");
       background-color: #000;     
       display: block;
