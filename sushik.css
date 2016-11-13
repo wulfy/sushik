@@ -27,7 +27,7 @@ body{
     
   }
   .logo{
-    margin-right: 2%;
+    
     float:left;
     /*width: 30%;*/
     height: 90%;
@@ -188,11 +188,7 @@ transform:rotate(360deg);
             
           }
 
-          .logo_title{
-            height:90%;
-            max-width: 40%;
-          }
-          .logo{
+          .logo_container *{
             height:90%;
           }
 
