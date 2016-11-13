@@ -188,7 +188,7 @@ transform:rotate(360deg);
         }
 
         body{
-        font-size: 3vw;
+        font-size: 2vw;
       }
 
         #menu .image{
@@ -227,3 +227,8 @@ transform:rotate(360deg);
 
 }
 
+@media only screen and (max-device-width: 300px){
+body{
+        font-size: 1.5vh;
+      }
+  }
