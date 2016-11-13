@@ -217,7 +217,7 @@ transform:rotate(360deg);
         }
 
         #menu{
-          margin-top: 11vh;
+          margin-top: 10vh;
         }
         #menu ul{
           text-align: center;
@@ -239,6 +239,9 @@ transform:rotate(360deg);
       body{
         font-size: 1.8vh;
       }
+      #menu{
+          margin-top: 0;
+        }
       #menu li{
           text-align: center;
           width: 100%;
