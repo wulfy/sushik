@@ -104,7 +104,7 @@ transform:rotate(360deg);
     float: right;
     color: white;
     font-size: 4em;
-    margin-right: 0.5em;
+    margin-right: 0.2em;
   }
 
   
@@ -184,12 +184,12 @@ transform:rotate(360deg);
   @media only screen and (max-width: 700px) , screen and (max-device-width: 700px){
 
         .logo_container{
-            padding-top: 12px;
+            padding-top: 10px;
             
           }
 
           .logo_container *{
-            height:85%;
+            height:90%;
           }
 
         #menu .image{
