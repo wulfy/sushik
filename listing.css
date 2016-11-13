@@ -1,7 +1,6 @@
 .list{
     width: 90%;
     margin:0 auto;
-
   }
 
   .list_title{
@@ -17,14 +16,7 @@
     padding: 0px;
     text-align: center;
   }
-   @media only screen and (max-width: 700px) , screen and (max-device-width: 700px){
 
-      .list ul{
-        text-align: center;
-      }
-      
-
-    }
 
   .list li:nth-child(even){
     
@@ -51,7 +43,7 @@
   .list li .text{
     margin-top: -2em;
     margin-left: 2%;
-    
+    text-transform: uppercase;
     vertical-align: bottom;
     float: left;
     color: grey;
@@ -83,6 +75,15 @@
   .content{
    margin-top: 10em;
   }
+
+       @media only screen and (max-width: 750px) , screen and (max-device-width: 750px){
+
+      .content{
+        margin-top: 13em;
+      }
+      
+
+    }
 
   .border_left{
     width: 40%;
