@@ -181,7 +181,7 @@ transform:rotate(360deg);
 
 /***** FOR MOBILE DEVICES ****/
 
-  @media only screen and (max-device-width: 500px) {
+  @media only screen and (max-width: 600px) , screen and (max-device-width: 600px) {
 
         .logo_container{
           padding-top: 2px;
@@ -227,7 +227,7 @@ transform:rotate(360deg);
 
 }
 
-@media only screen and (max-width: 400px) , screen and (max-device-width: 400px){
+@media only screen and (max-device-width: 400px){
 body{
         font-size: 1.5vh;
       }
