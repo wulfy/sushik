@@ -190,7 +190,6 @@ transform:rotate(360deg);
 
           .logo_container *{
             height:90%;
-            max-width: 50%;
           }
 
         #menu .image{
