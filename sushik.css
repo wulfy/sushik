@@ -118,6 +118,7 @@ transform:rotate(360deg);
 
   #menu ul{
     padding: 0;
+    padding-top: 20px;
   }
 
   #menu li{
@@ -228,6 +229,6 @@ transform:rotate(360deg);
 
 @media only screen and (max-width: 550px) , screen and (max-device-width: 550px){
 body{
-        font-size: 2vh;
+        font-size: 1.5vh;
       }
   }
