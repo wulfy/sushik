@@ -188,9 +188,11 @@ transform:rotate(360deg);
             
           }
 
-          .logo_container *{
+          .logo_title{
             height:90%;
-            max-width: 50%;
+          }
+          .logo{
+            height:90%;
           }
 
         #menu .image{
