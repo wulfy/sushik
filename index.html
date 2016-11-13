@@ -36,6 +36,7 @@
 		/*width: 30%;*/
 		height: 90%;
 		z-index: -1;
+		margin-right: 2%;
 		-webkit-transition: 3s linear;
 		-moz-transition: 3s linear;
 		-o-transition: 3s linear;
@@ -93,7 +94,7 @@
 	nav ul li a{
 		text-decoration: none;
 		color: inherit;
-		
+		text-shadow: 2px 2px 4px #000;
 	}
 
 	nav ul li:hover{
@@ -189,23 +190,21 @@
 
 .animate{
 	
-translation 20s infinite ease-in-out; 
--webkit-animation: translation 20s infinite ease-in-out; 
--moz-animation: translation 20s infinite ease-in-out; 
--ms-animation: translation 20s infinite ease-in-out; 
--o-animation: translation 20s infinite ease-in-out;
+translation 20s normal ease-in-out; 
+-webkit-animation: translation 1s normal ease-in-out; 
+-moz-animation: translation 1s normal ease-in-out; 
+-ms-animation: translation 1s normal ease-in-out; 
+-o-animation: translation 1s normal ease-in-out;
 }
 
 
 @-webkit-keyframes translation {
     0%   {margin-right: -5%}
-    5% {margin-right: 10%}
-    100% {margin-right: 10%}
+    100% {margin-right: 2%}
 }
 
 @keyframes translation {
     0%   {margin-right: -5%}
-    5% {margin-right: 2%}
     100% {margin-right: 2%}
 }
 
@@ -254,10 +253,10 @@ transform:rotate(360deg);
 <nav>
 
 	<ul>
-	<li ><a class="hvr-radial-out" href="index.html">Le restaurant</a></li>
-    <li ><a class="hvr-radial-out" href="contact.html">La carte</a></li>
-    <li ><a class="hvr-radial-out" href="contact.html">Commander</a></li>
-    <li ><a  class="hvr-radial-out" href="contact.html">Contacts</a></li>
+	<li ><a class="hvr-radial-out" href="#">Le restaurant</a></li>
+    <li ><a class="hvr-radial-out" href="carte.html">La carte</a></li>
+    <li ><a class="hvr-radial-out" href="#">Commander</a></li>
+    <li ><a  class="hvr-radial-out" href="#">Contacts</a></li>
   </ul>
 </nav>
 
