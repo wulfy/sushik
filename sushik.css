@@ -124,7 +124,7 @@ transform:rotate(360deg);
   #menu li{
     display: inline-block;
     width: 30%;
-    min-width: 300px;
+    min-width: 10em;
     margin-bottom: 10%;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
