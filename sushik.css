@@ -37,6 +37,7 @@ body{
     -o-transition: 3s linear;
     -ms-transition: 3s linear;
     transition: 3s linear;
+    background-color: red;
   }
   .logo_title{
     /*width: 69%;*/
@@ -190,7 +191,6 @@ transform:rotate(360deg);
 
           .logo_container *{
             height:70%;
-            background-color: red;
           }
 
         #menu .image{
