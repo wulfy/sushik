@@ -34,14 +34,8 @@ body{
   .logo{
     
     float:left;
-    /*width: 30%;*/
     height: 90%;
     z-index: -1;
-    -webkit-transition: 3s linear;
-    -moz-transition: 3s linear;
-    -o-transition: 3s linear;
-    -ms-transition: 3s linear;
-    transition: 3s linear;
   }
   .logo_title{
     /*width: 69%;*/
