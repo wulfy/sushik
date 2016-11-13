@@ -46,12 +46,6 @@ body{
   .logo_title{
     float: left;
       background-color: transparent;
-      display: block;
-      background-size: contain;
-      background-attachment:fixed;
-      background-repeat:no-repeat;
-      box-sizing:border-box;
-      background-position: 50% 1px;
       height: 100%;
       z-index: 2;
       background-color: red;
