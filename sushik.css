@@ -119,6 +119,7 @@ transform:rotate(360deg);
   #menu ul{
     padding: 0;
     padding-top: 20px;
+
   }
 
   #menu li{
@@ -215,6 +216,12 @@ transform:rotate(360deg);
           background: url("./images/contact.png") ;
         }
 
+        #menu{
+          margin-top: 11vh;
+        }
+        #menu ul{
+          text-align: center;
+        }
         #menu span{
           float: none;
         }
