@@ -141,11 +141,11 @@
 
 .animate{
   
-translation 20s normal ease-in-out; 
--webkit-animation: translation 1s normal ease-in-out; 
--moz-animation: translation 1s normal ease-in-out; 
--ms-animation: translation 1s normal ease-in-out; 
--o-animation: translation 1s normal ease-in-out;
+translation 2s normal ease-in-out; 
+-webkit-animation: translation 2s normal ease-in-out; 
+-moz-animation: translation 2s normal ease-in-out; 
+-ms-animation: translation 2s normal ease-in-out; 
+-o-animation: translation 2s normal ease-in-out;
 }
 
 
