@@ -227,8 +227,8 @@ transform:rotate(360deg);
 
 }
 
-@media only screen and (max-width: 550px) , screen and (max-device-width: 550px){
+@media only screen and (max-width: 400px) , screen and (max-device-width: 400px){
 body{
-        font-size: 3vw;
+        font-size: 1.5vh;
       }
   }
