@@ -1,0 +1,103 @@
+.list{
+    width: 90%;
+    margin:0 auto;
+
+  }
+
+  .list_title{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1.5em;
+  }
+
+
+  .list ul{
+    padding: 0px;
+    text-align: center;
+  }
+   @media only screen and (max-width: 700px) , screen and (max-device-width: 700px){
+
+      .list ul{
+        text-align: center;
+      }
+      
+
+    }
+
+  .list li:nth-child(even){
+    
+  }
+
+  .list li{
+    width: 20%;
+    min-width: 250px;
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 5%;
+  }
+
+  .list li .image{
+    vertical-align: top;
+    float: left;
+    z-index: -1;
+  }
+
+  .list li img{
+    width: 100%;
+    float: right;
+  }
+  .list li .text{
+    margin-top: -2em;
+    margin-left: 2%;
+    
+    vertical-align: bottom;
+    float: left;
+    color: grey;
+   /*background-color: rgba(0, 0, 0, 0.7);*/
+  }
+
+  .text p{
+    margin: 0;
+    margin-top: 1em;
+
+  }
+
+  .text .title{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: white;
+     text-shadow: 2px 2px 4px #000;
+     display: block;
+     background-color: rgba(248, 7, 7, 0.4);
+  }
+
+  .text .price{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    color: white;
+    padding-left: 5%;
+  }
+  .content{
+   margin-top: 10em;
+  }
+
+  .border_left{
+    width: 40%;
+    float: right;
+    margin-right: 40%;
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+  }
+  .border_right{
+    width: 40%;
+    margin-left: 40%;
+    float: left;
+    border-bottom: 1px solid grey;
+  }
+
+  .list_title span{
+    display: block;
+  }

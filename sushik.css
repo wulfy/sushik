@@ -1,0 +1,229 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 2vh;
+    background-color: black;
+  }
+
+  header{
+    width: 100vw;
+    position: fixed;
+    background-color: transparent;
+    padding-top: 5px;
+    height: 10%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+    a{
+    color: white;
+  }
+
+
+/***** LOGO ****/
+  .logo_container{
+    /*max-width: 50%;*/
+    height: 100%;
+    
+  }
+  .logo{
+    margin-right: 2%;
+    float:left;
+    /*width: 30%;*/
+    height: 90%;
+    z-index: -1;
+    -webkit-transition: 3s linear;
+    -moz-transition: 3s linear;
+    -o-transition: 3s linear;
+    -ms-transition: 3s linear;
+    transition: 3s linear;
+  }
+  .logo_title{
+    /*width: 69%;*/
+    float: left;
+      background-color: transparent;
+      display: block;
+      background-size: contain;
+      background-attachment:fixed;
+      background-repeat:no-repeat;
+      box-sizing:border-box;
+      background-position: 50% 1px;
+      height: 100%;
+      z-index: 2;
+  }
+
+  .logo_title img, .logo img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+    .logo_container{
+    margin: 0 auto;
+  }
+
+
+
+  /***** logo animation ******/
+  .animate{
+  
+translation 2s normal ease-in-out; 
+-webkit-animation: translation 2s normal ease-in-out; 
+-moz-animation: translation 2s normal ease-in-out; 
+-ms-animation: translation 2s normal ease-in-out; 
+-o-animation: translation 2s normal ease-in-out;
+}
+
+
+@-webkit-keyframes translation {
+    0%   {margin-right: -5%}
+    100% {margin-right: 2%}
+}
+
+@keyframes translation {
+    0%   {margin-right: -5%}
+    100% {margin-right: 2%}
+}
+
+
+.logo:hover{
+margin-left: 400px;
+
+
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+transform:rotate(360deg);
+
+
+ }
+
+
+  /*** BURGER MENU ****/
+  .burger_menu{
+    float: right;
+    color: white;
+    font-size: 4em;
+    margin-right: 0.5em;
+  }
+
+  
+/**** DISPLAYED MENU ****/
+  .menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    color: white
+  }
+
+  #menu ul{
+    padding: 0;
+  }
+
+  #menu li{
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    margin-bottom: 10%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    height: 100px;
+  }
+
+  #menu li:hover {
+     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+  #menu span{
+    float: right;
+    z-index: 10;
+    text-align: left;
+    font-size: 1.4em;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 18%;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  #menu .image{
+    border-bottom: 1px solid red;
+    width: 40%;
+    float :right;
+    margin-top: 0em;
+    margin-left: -5em;
+     height: 100%;
+
+         background-size: contain;
+      background-repeat:no-repeat;
+      box-sizing:border-box;
+      background-position: 50% 1px; 
+  }
+
+
+
+  #image1{
+    background: url("./images/restaurant.jpg") ;
+  }
+
+  #image2{
+    background: url("./images/chirashi.jpg") ;
+  }
+
+  #image3{
+    background: url("./images/commander.jpg") ;
+  }
+
+  #image4{
+    background: url("./images/contact.jpg") ;
+  }
+
+
+/***** FOR MOBILE DEVICES ****/
+  @media only screen and (max-width: 700px) , screen and (max-device-width: 700px){
+
+        .logo_container{
+            padding-top: 10px;
+            
+          }
+
+          .logo_container *{
+            height:90%;
+          }
+
+        #menu .image{
+           height: 100%;
+           width: 20%;
+           float: none;
+           margin:5px auto;
+           border:none;
+        }
+
+        #image1{
+          background: url("./images/resto.png") ;
+        }
+
+        #image2{
+          background: url("./images/carte_icon_2.png") ;
+        }
+
+        #image3{
+          background: url("./images/deliver.png") ;
+        }
+
+        #image4{
+          background: url("./images/contact.png") ;
+        }
+
+        #menu span{
+          float: none;
+        }
+
+        #menu li{
+          text-align: center;
+          width: 100%;
+          height: 50px;
+        }
+
+}
