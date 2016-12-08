@@ -83,7 +83,7 @@ var waitTimeout = 10000;
 	});
 
 	//controle unicité des numéros
-	casper.then(function (){
+	/*casper.then(function (){
 				this.sendKeys('#NUM_TELEPHONE', login,{reset: true});
 				this.click('#envoyer');
 				if (this.exists('.error')) {
@@ -97,7 +97,7 @@ var waitTimeout = 10000;
 						this.test.assert(true, "Controle d unicite des numeros "+login);
 				}else
 						this.test.assert(false, "Controle d unicite des numeros "+login);
-	});
+	});*/
 
 	//affichage bouton connexion
 	casper.thenOpen(url1+'/avantages-m6mobile.html').waitForSelector('.user-connected', 
