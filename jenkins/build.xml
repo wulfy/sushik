@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="proto-application" default="build" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
+        <property environment="env"/>
+        <!-- ==================================================================  -->
+        <!-- Construction                                                        -->
+        <!-- ==================================================================  -->
+        <!--target name="build" depends="clean-up, init, coke, atoum, phantom, behat-sf, behat-legacy, behat-legacy-rerun, deploy-wipeout" /-->
+        <target name="build" depends="casperjs" />
+        <echo if:set="testPP"     message="TESTING PREPROD"/>
+        <target name="casperjs" description="Run casper instance" if="testSite">
+                <exec executable="casperjs" failonerror="true">
+                        <arg value="test" />
+                        <arg value="m6mobile.js" />
+                        <arg value="--url=http://pp.m6mobile.fr" if:set="testPP"/>
+                </exec>
+        </target>
+</project>
