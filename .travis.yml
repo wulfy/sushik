@@ -19,4 +19,4 @@ before_script:
    - phantomjs --version; casperjs --version
    - grunt connect:test:keepalive & #shooting up a web server for the tests
 
-script: npm test jenkins/m6mobile.js --url=http://www.m6mobile.fr
+script: casperjs test jenkins/m6mobile.js --url=http://www.m6mobile.fr
