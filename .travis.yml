@@ -7,9 +7,9 @@ before_install:
    - git submodule update --init --recursive
 
 install:
-   - npm install -g grunt-cli bower
-   - npm install
-   - bower install
+   # - npm install -g grunt-cli bower
+   # - npm install
+   # - bower install
 
 before_script:
    # - git clone -q git://github.com/n1k0/casperjs.git
