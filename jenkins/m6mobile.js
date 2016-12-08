@@ -6,7 +6,7 @@ var url1 = 'http://www.m6mobile.fr';
 if(casper.cli.has("url"))
 	url1 = casper.cli.get("url");
 
-casper.test.begin('Testing '+url1, 5, function suite(test) {
+casper.test.begin('Testing '+url1, 4, function suite(test) {
 
 var login = "0675360582";
 var loginHeader = "0675360582";
